@@ -43,6 +43,9 @@ public class CircularLLReverse {
         System.out.println();
     }
     public static void reverse() {
+        if(head==null||head.next==null){
+            return;
+        }
         Node temp = head;
         Node prev=null;
         Node next;
